@@ -1,0 +1,11 @@
+.carousal-contaner {
+    overflow: hidden;
+    .carousal-card-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        overflow-x: auto;
+        width: 200%;
+        margin-left: 0%;
+    }
+}
