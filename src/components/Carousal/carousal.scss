@@ -1,13 +1,15 @@
 .carousal-contaner {
     overflow: hidden;
+    height: 70%;
     .carousal-card-container{
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
         overflow-x: auto;
-        width: 200%;
+        width: 350%;
         margin-left: 0%;
         transition-property: margin-left;
         transition-duration: 3s;
+        height: 100%;
     }
 }

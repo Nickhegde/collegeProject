@@ -19,7 +19,6 @@ export default function Home() {
     }
 
     const onShowModalToggle = (index=-1) => {
-      console.log("clicked", showModal);
       setModalContentIndex(index);
       setShowModal(!showModal);
     }
@@ -37,10 +36,12 @@ export default function Home() {
     let isHideRightScroll= (cardItems.length>3 && (((cardItems.length*100/3)-100)>Math.abs(marginLeftValue))) ? "visible":"hidden";
     let isHideLeftScroll = marginLeftValue < 0 ? "visible":"hidden";
     let widthValue = (Math.floor(cardItems.length/3)+1) * 100;
+    let isShowModalLeft = modalContentIndex > 0? "visible":"hidden";
+    let isShowModalRight = modalContentIndex < cardItems.length-1? "visible":"hidden";
 
   return (
     <div id='home-container' className='home-container'>
-      {showModal ? <Modal modalContent={cardItems[modalContentIndex]} onSetModalContent={onSetModalContent} onCloseModal={onShowModalToggle}></Modal> : null}
+      {showModal ? <Modal modalContent={cardItems[modalContentIndex]} onSetModalContent={onSetModalContent} onCloseModal={onShowModalToggle} isShowModalLeft={isShowModalLeft} isShowModalRight={isShowModalRight}></Modal> : null}
       <div id="left-scroll-button" onClick={onLeftScrollClick} style={{visibility: isHideLeftScroll}}>{`<`}</div>
       <Carousal Items = {cardItems} marginLeftValue={marginLeftValue} widthValue={widthValue} onShowModal={onShowModalToggle}></Carousal>
       <div id="right-scroll-button" onClick={onRighttScrollClick} style={{visibility: isHideRightScroll}}>{`>`}</div>
