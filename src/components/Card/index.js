@@ -1,11 +1,11 @@
 import React from 'react';
 import './card.scss';
 
-export default function Card({CardItem}) {
+export default function Card({cardItem, cardIndex,  onShowModal}) {
   return (
-    <div id='card-container' className='card-container'>
-      <div className='card-title'>{CardItem.title}</div>
-      <div className='card-description'>{CardItem.description}</div>
+    <div id='card-container' className='card-container' onClick={()=>{onShowModal(cardIndex)}}>
+      <div className='card-title'>{cardItem.title}</div>
+      <div className='card-description'>{cardItem.description}</div>
     </div>
   )
 }

@@ -1,0 +1,52 @@
+.modal-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+    }
+    .popup-main-container{
+        position: absolute;
+        z-index: 1;
+        width: 50%;
+        height: 80%;
+        border: 1px solid black;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        #close-button{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            font-size: large;
+            top: 2%;
+            right: 2%;
+            cursor: pointer;
+        }
+        #modal-left-button, #modal-right-button{
+            cursor: pointer;
+        }
+        .popup-container{
+            .modal-title{
+                width: 100%;
+                text-align: left;
+                height: 25px;
+                font-size: large;
+                font-weight: bold;
+            }
+            .modal-description{
+                width: 100%;
+                text-align: left;
+                font-size: medium;
+            }
+        }
+    }
+}
