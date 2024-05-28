@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Carousal, Modal } from "components";
 import { VALUES } from "consts";
 import "./Home.scss";

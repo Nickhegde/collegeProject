@@ -4,7 +4,7 @@ import './Modal.scss';
 
 export default function Modal({modalContent, onSetModalContent, onCloseModal, isShowModalLeft, isShowModalRight}) {
   return (
-    <div className="modal-overlay" onClick={onCloseModal}>
+    <div className="modal-overlay">
     <div className="modal" onClick={(e) => e.stopPropagation()}>
       <div className="modal-header">
         <h2>{modalContent.title}</h2>
@@ -16,11 +16,12 @@ export default function Modal({modalContent, onSetModalContent, onCloseModal, is
      <button className="arrow-btn left-arrow" onClick={()=>{onSetModalContent("left")}} style={{visibility: isShowModalLeft}}>{'<'}</button>
       <div className="modal-content">
       <div className="image-container">
-              {/* <img src={modalContent.bgImg} alt={modalContent.title} /> */}
-              <h1>here goes image</h1>
+            <img src={modalContent.bgImg} alt={modalContent.title} />
         </div>
         <div className="modal-description">
-        <p>{modalContent.modalDescription}</p>
+            <p>
+                {modalContent.modalDescription}
+            </p>
       </div>
       </div>
       
