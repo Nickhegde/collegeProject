@@ -4,10 +4,12 @@ import { VALUES } from "consts";
 import "./Home.scss";
 
 export default function Home() {
-  const [cardItems, setCardItems] = useState(VALUES.CAROUSAL_ITEMS);
+  // const [cardItems, setCardItems] = useState(VALUES.CAROUSAL_ITEMS);
   const [marginLeftValue, setMarginLeftValue] = useState(0);
   const [showModal, setShowModal] = useState(false);
-  const [modalContentIndex, setModalContentIndex] = useState(-1);
+  const [modalContentIndex, setModalContentIndex] = useState(-1); 
+
+  let cardItems = VALUES.CAROUSAL_ITEMS;
 
   const onLeftScrollClick = () => {
     setMarginLeftValue(marginLeftValue + 75);
