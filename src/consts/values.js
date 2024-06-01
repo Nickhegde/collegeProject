@@ -5,7 +5,7 @@ import c4 from "assets/1930.jpg";
 import c5 from "assets/1940.jpg";
 import c6 from "assets/1950.jpg";
 import c7 from "assets/1960.jpg";
-import c8 from "assets/1900_v.mov"
+import c8 from "assets/1900_v.mp4"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
