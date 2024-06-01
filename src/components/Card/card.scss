@@ -9,6 +9,7 @@
     border: 1px solid antiquewhite; /* Optional: add a border for better visibility */
     border-radius: 8px; /* Optional: add border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+    transition: transform 3s ease;
   cursor: pointer;
   .card-title {
     width: 100%;
@@ -57,4 +58,7 @@
   .card-content.grow {
     height: 45%;
   }
-
+  .desc-body{
+    text-align: left;
+  }
+ 
