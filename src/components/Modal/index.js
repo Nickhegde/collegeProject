@@ -32,7 +32,7 @@ export default function Modal({
           <div className="modal-content">
             <div className="image-container">
               {modalContent.modalVideo ? (
-                <video width="320" height="240" controls autoPlay muted>
+                <video width="320" height="240" controls loop autoPlay muted="true">
                   <source src={c8} type="video/mp4" />
                 </video>
               ) : (
