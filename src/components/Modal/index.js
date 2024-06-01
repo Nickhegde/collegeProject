@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./Modal.scss";
-import c8 from "assets/1900_v.mov";
 
 export default function Modal({
   modalContent,
@@ -32,8 +31,11 @@ export default function Modal({
           <div className="modal-content">
             <div className="image-container">
               {modalContent.modalVideo ? (
-                <video width="320" height="240" loop muted autoPlay>
-                  <source src={c8} type="video/mp4" />
+                <video 
+                  width="320" 
+                  height="240" 
+                  src={modalContent.modalVideo} 
+                  type="video/mp4" loop muted autoPlay>
                 </video>
               ) : (
                 <img src={modalContent.bgImg} alt={modalContent.title} />
