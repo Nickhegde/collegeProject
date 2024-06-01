@@ -13,7 +13,7 @@ export default function Card({ cardItem, cardIndex, onShowModal }) {
   }, []);
   return (
     <div
-    id="card-container"
+    id={`card-container-${cardIndex}`}
     className={`card-container ${isShrunk ? 'shrink' : ''}`}
     onClick={() => { onShowModal(cardIndex); }}
   >
@@ -22,7 +22,7 @@ export default function Card({ cardItem, cardIndex, onShowModal }) {
     <div className="card-title">{cardItem.title}</div>
     {isShrunk?<ul>
               {cardItem.description.map((detail, idx) => (
-                <li key={idx}><strong>{detail.topic}:</strong> {detail.details}</li>
+                <li key={idx} className="desc-body"><strong>{detail.topic}:</strong> {detail.details}</li>
               ))}
             </ul>:''}
     

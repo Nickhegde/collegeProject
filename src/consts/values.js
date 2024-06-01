@@ -1,10 +1,11 @@
-import c1 from "assets/c1.jpeg";
-import c2 from "assets/c2.jpeg";
-import c3 from "assets/c3.jpeg";
-import c4 from "assets/c4.jpeg";
-import c5 from "assets/c5.jpeg";
-import c6 from "assets/c6.jpeg";
-import c7 from "assets/c7.jpeg";
+import c1 from "assets/1900.jpg";
+import c2 from "assets/1910.jpg";
+import c3 from "assets/1920.jpg";
+import c4 from "assets/1930.jpg";
+import c5 from "assets/1940.jpg";
+import c6 from "assets/1950.jpg";
+import c7 from "assets/1960.jpg";
+import c8 from "assets/1900_v.mov"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -24,6 +25,7 @@ export default {
         },
       ],
       bgImg: c1,
+      modalVideo:c8,
       modalTitle: "ModalTitle1",
       modalDescription:
         "The early 1900s marked significant advancements in transportation, with the rise of automobiles revolutionizing personal and commercial travel. Henry Ford's introduction of the Model T in 1908 made cars affordable for many Americans, leading to widespread adoption and fundamentally changing the landscape of cities and rural areas alike. Roads and highways began to expand to accommodate the growing number of vehicles. Additionally, the Wright brothers achieved the first powered flight in 1903, setting the stage for the future of aviation and opening the skies to human exploration. This decade also saw transformative changes in communication technology. The telephone, which had been invented in the late 19th century, became more widespread, allowing people to connect over long distances with unprecedented ease. Meanwhile, Guglielmo Marconi's invention of the radio enabled wireless communication, which would eventually lead to mass broadcasting. These innovations not only changed how people interacted but also laid the groundwork for future developments in communication technology.",
